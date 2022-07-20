@@ -17,8 +17,8 @@ export const SideBar = () => {
                             <Link to="#" className={style.link}>
                                 <Icons
                                     name={listItem.svg}
-                                    color='#fff'
-                                    size='32'
+                                    color='#3A3B3C'
+                                    size='20'
                                     className={style.svg}
                                 />
                             </Link>
