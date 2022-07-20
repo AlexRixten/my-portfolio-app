@@ -1,30 +1,38 @@
 [
     {
         "id": "0",
-        "tooltip": "Home"
+        "tooltip": "Home",
+        "svg": "home",
+        "link": "#"
     },
     {
         "id": "1",
-        "tooltip": "Home"
+        "tooltip": "Service",
+        "svg": "doc",
+        "link": "#"
     },
     {
         "id": "2",
-        "tooltip": "Home"
+        "tooltip": "Education",
+        "svg": "master",
+        "link": "#"
     },
     {
         "id": "3",
-        "tooltip": "Home"
+        "tooltip": "Portfolios",
+        "svg": "bag",
+        "link": "#"
     },
     {
         "id": "4",
-        "tooltip": "Home"
+        "tooltip": "Blog",
+        "svg": "pen",
+        "link": "#"
     },
     {
         "id": "5",
-        "tooltip": "Home"
-    },
-    {
-        "id": "6",
-        "tooltip": "Home"
+        "tooltip": "Contact",
+        "svg": "contact",
+        "link": "#"
     }
 ]
