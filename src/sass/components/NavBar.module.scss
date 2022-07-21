@@ -1,3 +1,7 @@
 .header{
     @apply w-[100%] h-[60px] hidden -md:flex bg-mainDarkColor items-center justify-between;
 }
+
+.svg{
+    @apply group-hover:fill-white p-[20px] cursor-pointer items-center justify-center;
+}

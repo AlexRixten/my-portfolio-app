@@ -8,14 +8,14 @@ export const NavBar = () => {
             <Icons
                 name="buttonAboutMe"
                 color='#ffffff'
-                size='20'
-                className='group-hover:fill-white p-[2px] cursor-pointer'
+                size='60'
+                className={style.svg}
             />
             <Icons
                 name="buttonSideBar"
                 color='#ffffff'
-                size='20'
-                className='group-hover:fill-white p-[2px] cursor-pointer'
+                size='60'
+                className={style.svg}
             />
         </header>
     )

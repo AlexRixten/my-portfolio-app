@@ -1,6 +1,34 @@
 .aside {
-  @apply w-[100%] h-[100vh] flex-[2] -md:hidden;
+  @apply w-[100%] h-[100vh] flex-[3] -md:hidden relative;
 }
 .container {
-  @apply flex flex-col items-center justify-center overflow-y-auto py-4 px-3 bg-mainDarkColor h-[100%];
+  @apply flex flex-col items-center justify-center overflow-y-auto py-4 px-3 bg-mainDarkColor h-[100%] w-[100%];
+}
+
+.socialWrapper{
+  @apply mb-5
+}
+
+.Img{
+  @apply rounded-[100%] mb-5 w-[150px] h-[150px];
+}
+
+.authorName{
+  @apply font-medium text-white text-center my-2;
+}
+
+.authorJob{
+  @apply font-medium text-[#898a8a] text-center
+}
+
+.link{
+  @apply flex w-[26px] h-[26px] rounded-[100%] p-0 bg-orangeColor items-center justify-center text-base font-normal text-gray-900;
+}
+
+.svg{
+  @apply group-hover:fill-[#2B2B2B] w-[100%] h-[100%] p-[5px];
+}
+
+.divider{
+  @apply w-[100%] h-[2px] opacity-[0.8] bg-[#e5e5e5] mx-auto;
 }

@@ -1,0 +1,27 @@
+[
+    {
+        "id": "0",
+        "svg": "facebook",
+        "link": "/"
+    },
+    {
+        "id": "1",
+        "svg": "twitter",
+        "link": "/"
+    },
+    {
+        "id": "2",
+        "svg": "linkedin",
+        "link": "/"
+    },
+    {
+        "id": "3",
+        "svg": "instagram",
+        "link": "/"
+    },
+    {
+        "id": "4",
+        "svg": "whatsapp",
+        "link": "/"
+    }
+]
