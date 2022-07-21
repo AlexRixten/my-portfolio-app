@@ -1,0 +1,6 @@
+.aside {
+  @apply w-[100%] h-[100vh] flex-[2] -md:hidden;
+}
+.container {
+  @apply flex flex-col items-center justify-center overflow-y-auto py-4 px-3 bg-mainDarkColor h-[100%];
+}

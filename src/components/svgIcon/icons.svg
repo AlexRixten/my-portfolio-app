@@ -23,4 +23,16 @@
   <symbol id="icon-contact" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em">
     <path d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455z"></path>
   </symbol>
+
+  <symbol id="icon-buttonAboutMe" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em">
+    <line x1="3" y1="12" x2="21" y2="12"></line>
+    <line x1="3" y1="6" x2="21" y2="6"></line>
+    <line x1="3" y1="18" x2="21" y2="18"></line>
+  </symbol>
+
+  <symbol id="icon-buttonSideBar" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em">
+    <circle cx="12" cy="12" r="1"></circle>
+    <circle cx="12" cy="5" r="1"></circle>
+    <circle cx="12" cy="19" r="1"></circle>
+  </symbol>
 </svg>
