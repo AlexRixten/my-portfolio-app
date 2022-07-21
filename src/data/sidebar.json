@@ -3,36 +3,36 @@
         "id": "0",
         "tooltip": "Home",
         "svg": "home",
-        "link": "#"
+        "link": "/"
     },
     {
         "id": "1",
         "tooltip": "Service",
         "svg": "doc",
-        "link": "#"
+        "link": "service"
     },
     {
         "id": "2",
         "tooltip": "Education",
         "svg": "master",
-        "link": "#"
+        "link": "education"
     },
     {
         "id": "3",
         "tooltip": "Portfolios",
         "svg": "bag",
-        "link": "#"
+        "link": "portfolios"
     },
     {
         "id": "4",
         "tooltip": "Blog",
         "svg": "pen",
-        "link": "#"
+        "link": "blog"
     },
     {
         "id": "5",
         "tooltip": "Contact",
         "svg": "contact",
-        "link": "#"
+        "link": "contact"
     }
 ]
