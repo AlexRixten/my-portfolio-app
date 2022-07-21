@@ -13,7 +13,15 @@
 
 
 .link {
-  @apply flex w-[40px] h-[40px] items-center justify-center text-base font-normal text-gray-900;
+  @apply flex w-[40px] h-[40px] rounded-[100%] hover:bg-orangeColor bg-grayColor items-center justify-center text-base font-normal text-gray-900;
+}
+
+.Activelink{
+  @apply flex w-[40px] h-[40px] rounded-[100%] bg-orangeColor items-center justify-center text-base font-normal text-gray-900
+}
+
+.Activelink svg{
+  @apply fill-white
 }
 
 .span {

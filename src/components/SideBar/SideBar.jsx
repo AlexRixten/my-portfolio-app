@@ -3,26 +3,19 @@ import { Link } from 'react-router-dom'
 import Icons from '../../components/svgIcon';
 import style from '../../sass/components/Sidebar.module.scss'
 import { sideBarList } from '../../data/index'
+import { SideBarItem } from './SideBarItem';
 
 
 
 export const SideBar = () => {
+
     console.log(sideBarList)
     return (
-        <aside className={style.aside} aria-label="Sidebar">
+        <aside className={`${style.aside} flex-[1]`} aria-label="Sidebar">
             <div className={style.container}>
                 <ul className={style.list}>
                     {sideBarList.map(listItem => (
-                        <li key={listItem.id} className="group w-[40px] h-[40px] rounded-[100%] hover:bg-orangeColor bg-grayColor">
-                            <Link to="#" className={style.link}>
-                                <Icons
-                                    name={listItem.svg}
-                                    color='#3A3B3C'
-                                    size='20'
-                                    className='group-hover:fill-white p-[2px]'
-                                />
-                            </Link>
-                        </li>
+                        <SideBarItem key={listItem.id} listItem={listItem} />
                     ))}
                 </ul>
 
