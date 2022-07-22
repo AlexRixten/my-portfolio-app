@@ -82,7 +82,7 @@ li p{
 }
 
 .CV{
-  @apply text-white w-[100%];
+  @apply text-white w-[100%] text-sm;
   button{
     @apply flex items-center justify-center cursor-pointer gap-3 bg-orangeColor py-3 px-5 w-[100%] mt-4;
   }
