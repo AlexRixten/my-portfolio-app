@@ -1,0 +1,22 @@
+[
+    {
+        "id": "0",
+        "title": "Age",
+        "desc": "25"
+    },
+    {
+        "id": "1",
+        "title": "Residence",
+        "desc": "RU"
+    },
+    {
+        "id": "2",
+        "title": "Freelancer",
+        "desc": "Avilable"
+    },
+    {
+        "id": "3",
+        "title": "Address",
+        "desc": "Russia, Kazan"
+    }
+]

@@ -5,14 +5,15 @@ import me from '../../assets/anime.jpeg'
 
 import style from '../../sass/components/AboutMe.module.scss'
 import Icons from '../svgIcon'
-import { socialList } from '../../data'
+import { language, socialList, skills, author, extraSkills } from '../../data'
+import { AboutMeProgressBarItem } from './AboutMeProgressBarItem'
 
 
 export const AboutMe = () => {
   return (
     <aside className={style.aside} aria-label="Sidebar">
       <div className={style.container}>
-        <div className='absolute top-10'>
+        <div className='static top-10'>
           <div className={style.Me}>
             <div>
               <img className={style.Img} src={me} alt="avatar" />
@@ -36,10 +37,67 @@ export const AboutMe = () => {
                   </li>
                 )
               }
-
             </ul>
           </div>
+        </div>
+        <div className={style.divider}></div>
+        <div className={style.content}>
+          <ul className={style.authorWrapper}>
+            {
+              author.map(item => (
+                <li key={item.id} className={style.authorItem}>
+                  <p className={style.authorTxt}>{item.title}:</p>
+                  <span>{item.desc}</span>
+                </li>
+              ))
+            }
+          </ul>
           <div className={style.divider}></div>
+          <div className={style.block}>
+            <h5 className={style.title}>Language</h5>
+            {
+              language.map(item => (
+                <AboutMeProgressBarItem {...item} />
+              ))
+            }
+          </div>
+          <div className={style.divider}></div>
+          <div className={style.block}>
+            <h5 className={style.title}>Skills</h5>
+            {
+              skills.map(item => (
+                <AboutMeProgressBarItem {...item} />
+              ))
+            }
+          </div>
+          <div className={style.divider}></div>
+          <div className={style.block}>
+            <h5 className={style.title}>Extra Skills</h5>
+            {
+              extraSkills.map(item => (
+                <div className={style.extraItem}>
+                  <Icons
+                    name="extraskill"
+                    size='16'
+                    className="mr-2"
+                  />
+                  <p>{item.title}</p>
+                </div>
+              ))
+            }
+          </div>
+          <div className={style.divider}></div>
+        </div>
+        <div className={style.CV}>
+          <button type="button">
+            DOWNLOAD CV
+            <Icons
+              name="download"
+              color="#ffffff"
+              size='16'
+              className="mr-2"
+            />
+          </button>
         </div>
       </div>
     </aside>

@@ -1,2 +1,6 @@
 export {default as sideBarList} from './sidebar.json'
 export {default as socialList} from './social.json'
+export {default as language} from './language.json'
+export {default as skills} from './skills.json'
+export {default as author} from './author.json'
+export {default as extraSkills} from './extraSkills.json'

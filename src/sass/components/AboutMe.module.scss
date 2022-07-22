@@ -2,7 +2,7 @@
   @apply w-[100%] h-[100vh] flex-[3] -md:hidden relative;
 }
 .container {
-  @apply flex flex-col items-center justify-center overflow-y-auto py-4 px-3 bg-mainDarkColor h-[100%] w-[100%];
+  @apply flex flex-col items-center py-4 px-3 bg-mainDarkColor h-[100%] w-[100%] px-8;
 }
 
 .socialWrapper{
@@ -30,5 +30,60 @@
 }
 
 .divider{
-  @apply w-[100%] h-[2px] opacity-[0.8] bg-[#e5e5e5] mx-auto;
+  @apply w-[100%] h-[2px] opacity-[0.8] bg-[#e5e5e5] mx-auto mb-2;
+}
+
+.content{
+  @apply overflow-auto w-[100%] text-xs text-white h-[calc(100vh_-_440px)];
+}
+
+.content::-webkit-scrollbar {
+  @apply hidden
+}
+
+.authorWrapper{
+  @apply py-4
+}
+
+.authorWrapper li{
+  @apply flex justify-between
+}
+
+li p{
+  @apply px-2 py-1 bg-orangeColor mb-4
+}
+
+.title{
+  @apply text-lg my-4
+}
+
+.langItem{
+  @apply mb-4
+}
+
+.langInfo{
+  @apply flex justify-between mb-2
+}
+
+.langTxt{
+  @apply text-sm
+}
+
+.progressBar{
+  @apply flex items-center w-full bg-gray-200 rounded-full h-2.5 bg-transparent border-solid border-orangeColor border-2
+}
+
+.progress{
+  @apply bg-orangeColor h-1 rounded-full
+}
+
+.extraItem{
+  @apply flex items-center justify-start mb-4
+}
+
+.CV{
+  @apply text-white w-[100%];
+  button{
+    @apply flex items-center justify-center cursor-pointer gap-3 bg-orangeColor py-3 px-5 w-[100%] mt-4;
+  }
 }
