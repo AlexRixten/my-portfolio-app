@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function Service() {
+export const Service = () => {
   return (
     <div>Service</div>
   )
 }
+

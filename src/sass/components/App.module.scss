@@ -1,0 +1,11 @@
+.container{
+    @apply flex flex-col h-[100vh] -md:h-[calc(100vh_-_60px)]
+}
+
+.mainContainer{
+    @apply mx-5 my-2 flex-[1_0_auto]
+}
+
+.footer{
+    @apply flex-[0_0_auto] w-[100%]
+}

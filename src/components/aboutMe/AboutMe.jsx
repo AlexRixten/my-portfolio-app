@@ -57,7 +57,7 @@ export const AboutMe = () => {
             <h5 className={style.title}>Language</h5>
             {
               language.map(item => (
-                <AboutMeProgressBarItem {...item} />
+                <AboutMeProgressBarItem key={item.id} {...item} />
               ))
             }
           </div>
@@ -66,7 +66,7 @@ export const AboutMe = () => {
             <h5 className={style.title}>Skills</h5>
             {
               skills.map(item => (
-                <AboutMeProgressBarItem {...item} />
+                <AboutMeProgressBarItem key={item.id} {...item} />
               ))
             }
           </div>
@@ -75,7 +75,7 @@ export const AboutMe = () => {
             <h5 className={style.title}>Extra Skills</h5>
             {
               extraSkills.map(item => (
-                <div className={style.extraItem}>
+                <div key={item.id} className={style.extraItem}>
                   <Icons
                     name="extraskill"
                     size='16'
