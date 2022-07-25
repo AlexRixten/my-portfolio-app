@@ -1,0 +1,27 @@
+[
+    {
+        "id": "0",
+        "title": "Kazan Federal University",
+        "position": "student",
+        "period": "Sep 2014 - Jul 2019",
+        "name": "N.I. Lobachevsky Institute of Mathematics and Mechanics",
+        "description": "Nikolai Lobachevsky Institute of Mathematics and Mechanics was established in 2011 by merging the Faculty of Mechanics and Mathematics of Kazan University and Nikolai Chebotarev Research Institute of Mathematics and Mechanics. More than 750 students study and about 100 highly qualified professors work at the departments of mathematics, mechanics and pedagogical education.The education is supported by ten departments and the laboratory of computer facilities equipped with high-performance systems. The Institute collaborates with leading Universities, research centres and industrial enterprises in Russian Federation, neighbouring and foreign countries. Main research areas are: Fundamental and Applied Mathematics, Fluid and Solid Mechanics."
+    },
+    {
+        "id": "1",
+        "title": "Udemy",
+        "position": "student",
+        "period": "Nov 2021 - Dec 2021",
+        "name": "WEB-Developer",
+        "description": ""
+    },
+    {
+        "id": "2",
+        "title": "Udemy",
+        "position": "student",
+        "period": "Jan 2022 - Apr 2022",
+        "name": "Full course on JavaScript + React",
+        "description": ""
+    }
+
+]
