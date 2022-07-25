@@ -20,7 +20,7 @@ function App() {
       <NavBar />
       <div className="flex">
         <AboutMe />
-        <div className="flex-[8] bg-[#18191a]">
+        <div className={style.mainWrapper}>
           <div className={style.container}>
             <div className={style.mainContainer}>
               <Routes>

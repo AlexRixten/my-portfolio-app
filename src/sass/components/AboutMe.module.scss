@@ -2,7 +2,7 @@
   @apply w-[100%] h-[100vh] flex-[3] -md:hidden relative;
 }
 .container {
-  @apply flex flex-col items-center py-4 px-3 bg-mainDarkColor h-[100%] w-[100%] px-8;
+  @apply flex flex-col items-center py-4 px-8 bg-mainDarkColor h-[100%] w-[100%];
 }
 
 .socialWrapper{

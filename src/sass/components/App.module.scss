@@ -1,5 +1,13 @@
+.mainWrapper{
+    @apply flex-[8] bg-[#18191a];
+}
+
 .container{
-    @apply flex flex-col h-[100vh] -md:h-[calc(100vh_-_60px)]
+    @apply flex flex-col h-[100vh] -md:h-[calc(100vh_-_60px)] overflow-auto
+}
+
+.container::-webkit-scrollbar {
+    @apply hidden
 }
 
 .mainContainer{
