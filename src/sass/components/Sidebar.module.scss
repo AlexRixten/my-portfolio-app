@@ -16,6 +16,9 @@
 
 .Activelink {
   @apply flex w-[40px] h-[40px] rounded-[100%] bg-orangeColor items-center justify-center text-base font-normal text-gray-900;
+  & div{
+    @apply flex;
+  }
 }
 
 .Activelink svg {

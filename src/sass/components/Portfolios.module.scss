@@ -9,3 +9,14 @@
 .description{
     @apply text-base mt-5
 }
+
+.tabs{
+    @apply mt-5
+}
+
+.tablinks{
+    @apply p-2 hover:text-orangeColor;
+    &.active{
+        @apply text-orangeColor;
+    }
+}

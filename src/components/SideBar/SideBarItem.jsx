@@ -18,11 +18,11 @@ export const SideBarItem = (props) => {
                     size='20'
                     className='group-hover:fill-white p-[2px]'
                 />
+                <div className="absolute bottom-[45px] w-[100%] left-[50%] translate-x-[-50%] flex-col items-center hidden group-hover:flex">
+                    <span className="relative z-10 p-2 text-md leading-none text-mainDarkColor whitespace-no-wrap bg-white shadow-lg">{props.listItem.tooltip}</span>
+                    <div className="w-3 h-3 -mt-2 rotate-45 bg-white"></div>
+                </div>
             </NavLink>
-            <div className="absolute bottom-[45px] w-[100%] left-[50%] translate-x-[-50%] flex-col items-center hidden group-hover:flex">
-                <span className="relative z-10 p-2 text-md leading-none text-mainDarkColor whitespace-no-wrap bg-white shadow-lg">{props.listItem.tooltip}</span>
-                <div className="w-3 h-3 -mt-2 rotate-45 bg-white"></div>
-            </div>
         </li>
     )
 }

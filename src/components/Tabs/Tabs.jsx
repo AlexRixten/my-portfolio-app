@@ -1,7 +1,9 @@
 import React from 'react'
 
+import style from '../../sass/components/Portfolios.module.scss'
+
 export const Tabs = ({items}) => {
-    const [active, setActive] = React.useState(null);
+    const [active, setActive] = React.useState(0);
 
     const openTab = e => setActive(+e.target.dataset.index);
 
@@ -14,12 +16,13 @@ export const Tabs = ({items}) => {
 
     return (
         <div>
-            <div className="tab">
+            <div className={style.tabs}>
                 {items.map((n, i) => (
                     <button
-                        className={`tablinks ${i === active ? 'active' : ''}`}
+                        className={`${style.tablinks} ${i === active ? style.active : ''}`}
                         onClick={openTab}
                         data-index={i}
+                        key={i}
                     >{n.title}</button>
                 ))}
             </div>
