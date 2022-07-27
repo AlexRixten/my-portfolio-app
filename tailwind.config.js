@@ -24,7 +24,6 @@ module.exports = {
         orangeColor: '#FFB400',
         grayColor: '#767676',
         mainGray: '#242526',
-        mainDarkColor: '#242526',
       },
       shadow:{
         boxShadow: 'rgb(28 28 28 / 10%) 4px 0px 10px',
