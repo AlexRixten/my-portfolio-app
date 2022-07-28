@@ -1,3 +1,19 @@
 .contact{
-    @apply text-white font-bold
+    @apply text-white font-bold flex flex-col
+}
+
+.contactItem{
+    @apply bg-mainGray flex flex-col items-center justify-center p-6 mt-6;
+}
+
+.topSide{
+    @apply flex bg-orangeColor items-center justify-center w-[40px] h-[40px] rounded-full;
+}
+
+.list{
+    @apply flex flex-col w-[100%] mt-6;
+}
+
+.listItem{
+    @apply flex items-center justify-between mt-2;
 }

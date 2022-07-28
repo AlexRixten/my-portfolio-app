@@ -1,25 +1,31 @@
 import React from 'react'
 
 import style from '../../sass/components/Contact.module.scss'
+import Icons from '../svgIcon'
 
 
-export const ContactItem = () => {
+
+export const ContactItem = (props) => {
     return (
         <div className={style.contactItem}>
-            <div className='bg-mainGray w-[100px] h-[100px]'>
-                <div className=''>
-
-                </div>
-                <ul className=''>
-                <li className=''>
-                    <p>
-                        <span>
-
-                        </span>
-                    </p>
-                </li>
-                </ul>
+            <div className={style.topSide}>
+                <Icons
+                    name={props.svg}
+                    color='#fff'
+                    size='20'
+                    className='p-[2px]'
+                />
             </div>
+            <ul className={style.list}>
+                {
+                    props.contact.map(item => (
+                        <li key={item.id} className={style.listItem}>
+                            <p className='text-[14px]'>{item.title}: </p>
+                            <span className='text-[12px]'>{item.number}</span>
+                        </li>
+                    ))
+                }
+            </ul>
         </div>
     )
 }

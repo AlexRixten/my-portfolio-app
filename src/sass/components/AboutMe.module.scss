@@ -42,15 +42,13 @@
 }
 
 .authorWrapper{
-  @apply py-4
-}
-
-.authorWrapper li{
-  @apply flex justify-between
-}
-
-li p{
-  @apply px-2 py-1 bg-orangeColor mb-4
+  @apply py-4;
+  & li{
+    @apply flex justify-between;
+    & p{
+      @apply px-2 py-1 bg-orangeColor mb-4;
+    }
+  }
 }
 
 .title{
