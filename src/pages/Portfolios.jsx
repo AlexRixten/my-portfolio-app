@@ -2,6 +2,8 @@ import React from 'react'
 import style from '../sass/components/Portfolios.module.scss'
 import { Tabs } from '../components/Tabs/Tabs';
 
+import { projects } from '../data';
+
 const items = [
   { title: 'All Categories', content: 'London is the capital city of England.' },
   { title: 'Web Template', content: 'Paris is the capital of France.' },
@@ -17,7 +19,7 @@ export const Portfolios = () => {
       <h2 className={style.title}>Portfolios</h2>
       <p className={style.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsam harum minus atque quod illo dolorem aperiam exercitationem vero impedit corporis explicabo nostrum dolor culpa aut ab architecto, dicta qui!</p>
 
-      < Tabs items={items}/>
+      < Tabs items={projects}/>
     </div>
   )
 }

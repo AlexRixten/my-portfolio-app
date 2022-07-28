@@ -1,9 +1,9 @@
 import React from 'react'
 
 import style from '../../sass/components/Portfolios.module.scss'
-import { ProjectCard } from '../portfolios/ProjectCard';
+import { ProjectCard } from '../projects/ProjectCard';
 
-export const Tabs = ({items}) => {
+export const Tabs = ({ items }) => {
     const [active, setActive] = React.useState(0);
 
     const openTab = e => setActive(+e.target.dataset.index);
@@ -27,7 +27,13 @@ export const Tabs = ({items}) => {
                     >{n.title}</button>
                 ))}
             </div>
-            {items[active] && <ProjectCard {...items[active]} />}
+            <div className='flex flex-wrap items-center justify-between'>
+                {items[active] &&
+                    items[active].content.map(item => (
+                        <ProjectCard key={items[active].id} {...item} />
+                    ))
+                }
+            </div>
         </div>
     );
 }
