@@ -1,6 +1,7 @@
 import React from 'react'
 
 import style from '../../sass/components/Portfolios.module.scss'
+import { ProjectCard } from '../portfolios/ProjectCard';
 
 export const Tabs = ({items}) => {
     const [active, setActive] = React.useState(0);
@@ -26,7 +27,7 @@ export const Tabs = ({items}) => {
                     >{n.title}</button>
                 ))}
             </div>
-            {items[active] && <TabContent {...items[active]} />}
+            {items[active] && <ProjectCard {...items[active]} />}
         </div>
     );
 }
