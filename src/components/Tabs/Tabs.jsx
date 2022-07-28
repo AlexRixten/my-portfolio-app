@@ -8,12 +8,12 @@ export const Tabs = ({ items }) => {
 
     const openTab = e => setActive(+e.target.dataset.index);
 
-    const TabContent = (items) => (
-        <div className="tabcontent">
-            <h3>{items.title}</h3>
-            <p>{items.content}</p>
-        </div>
-    );
+    // const TabContent = (items) => (
+    //     <div className="tabcontent">
+    //         <h3>{items.title}</h3>
+    //         <p>{items.content}</p>
+    //     </div>
+    // );
 
     return (
         <div>
@@ -29,8 +29,8 @@ export const Tabs = ({ items }) => {
             </div>
             <div className='flex flex-wrap items-center justify-between'>
                 {items[active] &&
-                    items[active].content.map(item => (
-                        <ProjectCard key={items[active].id} {...item} />
+                    items[active].content.map((item, index) => (
+                        <ProjectCard key={items[active].id+index} {...item} />
                     ))
                 }
             </div>

@@ -4,13 +4,13 @@ import { Tabs } from '../components/Tabs/Tabs';
 
 import { projects } from '../data';
 
-const items = [
-  { title: 'All Categories', content: 'London is the capital city of England.' },
-  { title: 'Web Template', content: 'Paris is the capital of France.' },
-  { title: 'Logo', content: 'Tokyo is the capital of Japan.' },
-  { title: 'Ui Design', content: 'Tokyo is the capital of Japan.' },
-  { title: 'Branding', content: 'Tokyo is the capital of Japan.' },
-];
+// const items = [
+//   { title: 'All Categories', content: 'London is the capital city of England.' },
+//   { title: 'Web Template', content: 'Paris is the capital of France.' },
+//   { title: 'Logo', content: 'Tokyo is the capital of Japan.' },
+//   { title: 'Ui Design', content: 'Tokyo is the capital of Japan.' },
+//   { title: 'Branding', content: 'Tokyo is the capital of Japan.' },
+// ];
 
 export const Portfolios = () => {
 
