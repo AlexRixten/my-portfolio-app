@@ -1,5 +1,5 @@
 .aside {
-  @apply w-[100%] h-[100vh] flex-[3] -lg:hidden relative;
+  @apply h-[100vh] flex-[3];
 }
 .container {
   @apply flex flex-col items-center py-4 px-8 bg-mainGray h-[100%] w-[100%];

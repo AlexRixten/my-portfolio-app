@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 import me from '../../assets/anime.jpeg'
-
+import { useSelector } from 'react-redux'
 import style from '../../sass/components/AboutMe.module.scss'
 import Icons from '../svgIcon'
 import { language, socialList, skills, author, extraSkills } from '../../data'
@@ -10,8 +9,11 @@ import { AboutMeProgressBarItem } from './AboutMeProgressBarItem'
 
 
 export const AboutMe = () => {
+
+  const { activeAboutMe } = useSelector(state => state.navbar)
+
   return (
-    <aside className={style.aside} aria-label="Sidebar">
+    <aside className={`${style.aside} ${activeAboutMe ? '-lg:flex fixed z-50 w-[300px]' : '-lg:hidden relative w-[100%]'}`} aria-label="Sidebar">
       <div className={style.container}>
         <div className='static top-10'>
           <div className={style.Me}>

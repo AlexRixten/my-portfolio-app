@@ -1,9 +1,9 @@
 .aside {
-  @apply w-[100%] h-[100vh] flex-[1.5] -lg:hidden;
+  @apply h-[100vh] flex-[1.5];
 }
 
 .container {
-  @apply flex flex-col items-center justify-center overflow-y-auto py-4 px-3 bg-mainGray h-[100%];
+  @apply w-full flex flex-col items-center justify-center overflow-y-auto py-4 px-3 bg-mainGray h-[100%];
 }
 
 .list {
