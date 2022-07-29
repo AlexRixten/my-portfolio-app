@@ -93,5 +93,25 @@
                 "description": ""
             }
         ]
+    },
+    {
+        "id": "3",
+        "title": "Web",
+        "content": [
+            {
+                "id": "0",
+                "nameProject": "ToDo List",
+                "ImgProject": "../",
+                "link": "https://alexrixten.github.io/todo-app/",
+                "description": "It’s a list of tasks you need to complete or things that you want to do."
+            },
+            {
+                "id": "1",
+                "nameProject": "Shop",
+                "ImgProject": "../",
+                "link": "https://alexrixten.github.io/shop-app/",
+                "description": ""
+            }
+        ]
     }
 ]
