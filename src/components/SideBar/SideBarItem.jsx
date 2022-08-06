@@ -1,16 +1,20 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { reset } from '../../redux/slices/NavBar';
 import { NavLink } from 'react-router-dom'
 import Icons from '../../components/svgIcon';
 import style from '../../sass/components/Sidebar.module.scss'
 
 
 export const SideBarItem = (props) => {
+    const dispatch = useDispatch()
 
     return (
         <li className="relative flex flex-col group w-[100%]" >
             <NavLink
                 to={props.listItem.link}
                 className={({ isActive }) => isActive ? style.Activelink : style.link}
+                onClick={() => dispatch(reset())}
             >
                 <Icons
                     name={props.listItem.svg}
