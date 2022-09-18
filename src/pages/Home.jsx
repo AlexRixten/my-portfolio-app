@@ -11,7 +11,7 @@ export const Home = () => {
         </h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</p>
       </div>
-      <div className='flex-[1] items-center '>
+      <div className='flex-[1] items-center  '>
         <img className='object-contain	h-full w-full' src={me} alt={me} />
       </div>
     </div>
